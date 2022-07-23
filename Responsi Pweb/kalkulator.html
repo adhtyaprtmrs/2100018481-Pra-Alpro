@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator</title>
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body background="bg.jpg">
+	<center><h2>Kalkulator</h2><br><br>
+	<div class="kalkulator">
+		<form name="form" align="center">
+			<input class="tampilan" name="tampilan" >
+		</form>
+		<table align="center">
+			<tr>
+				<td><input class="tbl" type="button" value="C" onclick="reset()"></td>
+				<td><input class="tbl" type="button" value="/" onclick="masukan('/')"></td>
+				<td><input class="tbl" type="button" value="x" onclick="masukan('*')"></td>
+				<td><input class="tbl" type="button" value="<" onclick="hapus()"></td>			
+			</tr>
+			<tr>
+				<td><input class="tbl" type="button" value="7" onclick="masukan(7)"></td>
+				<td><input class="tbl" type="button" value="8" onclick="masukan(8)"></td>
+				<td><input class="tbl" type="button" value="9" onclick="masukan(9)"></td>
+				<td><input class="tbl" type="button" value="-" onclick="masukan('-')"></td>			
+			</tr>
+			<tr>
+				<td><input class="tbl" type="button" value="4" onclick="masukan(4)"></td>
+				<td><input class="tbl" type="button" value="5" onclick="masukan(5)"></td>
+				<td><input class="tbl" type="button" value="6" onclick="masukan(6)"></td>
+				<td><input class="tbl" type="button" value="+" onclick="masukan('+')"></td>			
+			</tr>
+			<tr>
+				<td><input class="tbl" type="button" value="1" onclick="masukan(1)"></td>
+				<td><input class="tbl" type="button" value="2" onclick="masukan(2)"></td>
+				<td><input class="tbl" type="button" value="3" onclick="masukan(3)"></td>
+				<td><input class="tbl" type="button" value="." onclick="masukan('.')"></td>			
+			</tr>
+			<tr>
+				<td colspan="3"><input class="tbl" style="width:166px" type="button" value="0" onclick="masukan(0)"></td>
+				<td><input class="tbl" type="button" value="=" onclick="hasil()"></td>		
+			</tr>
+		</table>
+	</div>
+	<br><br><div align="center"><strong><a href="index.html">
+	<td><input type="submit" name="Submit" value="Kembali ke Menu">
+</td>
+</a></strong></div>
+</body>
+</html>
